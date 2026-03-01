@@ -2,4 +2,151 @@ body {
     background-color: #000;
     font-family: "Inter Tight";
     color: white;
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+nav a, nav img {
+    display: block;
+}
+
+header {
+    margin: 0;
+}
+
+.menu {
+    font-size: 1.4rem;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 5rem;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: .6rem;
+}
+
+.menu a::after {
+    display: block;
+    content: "";
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+
+.menu a:hover::after {
+    width: 60%;
+    border-radius: 0;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.btn-whats img {
+    display: block;
+    max-width: 60px;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: .4s ease;
+}
+
+.btn-whats:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.btn-whats::after {
+    content: " ";
+    background-image: url(imgs/whatsapp-icon-hover.webp);
+    background-size: contain;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1);
+    transition: .4s ease;
+}
+
+.btn-whats:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.btn-whats {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-apresentacao {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-principal {
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    margin-bottom: .5rem;
+}
+
+.info {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.foto-main img {
+    display: block;
+    max-width: 580px;
+}
+
+.btns {
+    margin: 1.3rem auto;
+}
+
+.btn-geral {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: 1.2rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    margin: 0 1rem;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.btn-geral:hover {
+    background-color: white;
+    color: black;
 }
