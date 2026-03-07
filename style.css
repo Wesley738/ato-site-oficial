@@ -1,7 +1,13 @@
+:root {
+    --color-card: #181818;
+    --color-primary: black;
+    --color-secundary: white;
+}
+
 body {
-    background-color: #000;
+    background-color: var(--color-primary);
     font-family: "Inter Tight";
-    color: white;
+    color: var(--color-secundary);
     font-size: 62.5%;
 }
 
@@ -44,7 +50,7 @@ header {
 .menu a::after {
     display: block;
     content: "";
-    border: 1px solid white;
+    border: 1px solid var(--color-secundary);
     border-radius: 50%;
     position: absolute;
     bottom: 0;
@@ -154,15 +160,15 @@ header {
     text-decoration: none;
     padding: 1.2rem;
     font-size: 1rem;
-    border: 1px solid white;
+    border: 1px solid var(--color-secundary);
     margin: 0 1rem;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
 
 .btn-geral:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
 }
 
 .container-cards {
@@ -173,7 +179,7 @@ header {
 }
 
 .container-cards_card {
-    background-color: #181818;
+    background-color: var(--color-card);
     border: 1px solid transparent;
     padding: 1.8rem .7rem;
     border-radius: 10px;
@@ -191,7 +197,7 @@ header {
 .container-cards_card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(255, 255, 255,0.22);
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--color-secundary);
 }
 
 .container-cards_card img {
@@ -217,6 +223,10 @@ header {
     text-transform: uppercase;
     margin: 3rem auto;
     width: 30%;
+}
+
+.quem-atendo .subtitulo {
+    margin-bottom: 1.1rem;
 }
 
 .quem-nao-atendo {
@@ -254,4 +264,47 @@ header {
 .quem-nao-atendo img {
     max-width: 550px;
     display: block;
+}
+
+.como-funciona .subtitulo {
+    margin-bottom: .5rem;
+}
+
+.como-funciona .info {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 60%;
+    margin: 0 auto 2rem;
+}
+
+.container-como-funciona {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 350px;
+    margin-bottom: 4rem;
+}
+
+.container-como-funciona_card {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+    max-width: 250px;
+    padding: 1.1rem;
+    border-radius: 10px;
+    opacity: .85;
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+}
+
+.container-como-funciona_card:hover {
+    transform: translateY(-6px);
+    opacity: 1;
+}
+
+.container-como-funciona_card span {
+    display: inline-block;
+    padding: .6rem;
+    font-size: .8rem;
+    border: 1px solid var(--color-primary);
+    margin-bottom: 1.5rem;
 }
