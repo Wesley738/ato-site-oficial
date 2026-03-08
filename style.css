@@ -307,4 +307,48 @@ header {
     font-size: .8rem;
     border: 1px solid var(--color-primary);
     margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.apresentacao-problema .subtitulo {
+    margin-bottom: .5rem;
+}
+
+.apresentacao-problema .acrescimo-subtitulo {
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto 1rem;
+    font-style: italic;
+}
+
+.apresentacao-problema .list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.apresentacao-problema .list li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1.6rem 0;
+    flex-basis: 580px;
+}
+
+.apresentacao-problema .list span {
+    display: block;
+    font-weight: 400;
+    margin-top: .2rem;
+}
+
+.info-problema_destaque {
+    text-align: center;
+    display: inline-block;
+    padding: 1.2rem 1.3rem;
+    background-color: var(--color-secundary);
+    font-size: 1.3rem;
+    margin: 0 0 3.4rem;
+    color: var(--color-primary);
+    border-radius: 10px;
+    font-weight: 400;
 }
