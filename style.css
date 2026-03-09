@@ -16,6 +16,10 @@ body {
     margin: 0 auto;
 }
 
+.container-color-card {
+    background-color: var(--color-card);
+}
+
 nav {
     padding: 1.2rem;
     display: flex;
@@ -310,6 +314,10 @@ header {
     border-radius: 10px;
 }
 
+.apresentacao-problema {
+    padding: 2rem 0;
+}
+
 .apresentacao-problema .subtitulo {
     margin-bottom: .5rem;
 }
@@ -322,23 +330,45 @@ header {
     font-style: italic;
 }
 
-.apresentacao-problema .list {
+.content-problemas {
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.apresentacao-problema .list li {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 1.6rem 0;
-    flex-basis: 580px;
+.problema {
+    flex-basis: 450px;
 }
 
-.apresentacao-problema .list span {
+.problema .sub-subtitulo {
+    margin-bottom: 0;
+}
+
+.problema .info-menor {
+    margin-top: .3rem;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    transform: translate(-30px, 25px);
+}
+
+.checkmark::before {
+    content: "";
     display: block;
-    font-weight: 400;
-    margin-top: .2rem;
+    border-bottom: 4px solid var(--color-secundary);
+    transform: translateY(19px) rotate(46deg);
+}
+
+.checkmark::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid var(--color-secundary);
+    transform: translateY(15px) rotate(-49deg);
+
 }
 
 .info-problema_destaque {
@@ -347,7 +377,7 @@ header {
     padding: 1.2rem 1.3rem;
     background-color: var(--color-secundary);
     font-size: 1.3rem;
-    margin: 0 0 3.4rem;
+    margin: 0 0 1rem;
     color: var(--color-primary);
     border-radius: 10px;
     font-weight: 400;
