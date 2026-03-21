@@ -45,7 +45,7 @@
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -102,7 +102,7 @@
 <body>
     <header>
         <nav>
-            <a href="#"><img src="imgs/ato.webp" alt="Logo ATO" class="logo"></a>
+            <a href="#"><img src="imgs/ato.png" alt="Logo ATO" class="logo"></a>
             <ul class="menu">
                 <li><a href="#">Início</a></li>
                 <li><a href="#planos">Planos</a></li>
@@ -114,19 +114,20 @@
     <div class="container">
         <section class="hero">
             <div class="main-apresentacao">
-                <h1 class="titulo-principal">Transformamos negócios locais em presença digital estratégica.</h1>
-                <p class="info">Criamos landing pages profissionais que geram contatos reais pelo WhatsApp e posicionam sua empresa no Google.</p>
+                <h1 class="titulo-principal">Transformamos <span class="titulo-principal_destaque texto-gradiente">negócios locais</span> em Presença Digital <span class="titulo-principal_destaque segundo texto-gradiente">estratégica</span></h1>
+                <p class="info info-hero">Criamos landing pages profissionais que geram contatos reais pelo WhatsApp e posicionam sua empresa no Google.</p>
                 <div class="btns">
                     <a href="#planos" class="btn-geral">Quero mais clientes</a>
                     <a href="#" class="btn-geral">Falar no WhatsApp</a>
                 </div>
             </div>
             <div class="foto-main">
-                <img src="imgs/foto-hero.webp" alt="Foto do Wesley Victor">
+                <img src="imgs/Foto_Perfil-removebg-preview.webp" alt="Foto do Wesley Victor">
             </div>
+            <img class="img-background" src="imgs/ato.png" alt="Logo da ATO">
         </section>
     </div>
-    <div class="container-color-card">
+    <div class="background-color">
         <div class="container">
             <section class="apresentacao-problema">
                 <h2 class="subtitulo">Seu negócio está invisível na internet?</h2>
@@ -156,33 +157,35 @@
                 <p class="info-problema_destaque">Muitos negócios ainda <b>dependem apenas de redes sociais ou indicações</b> para conseguir novos clientes. Isso faz com que oportunidades importantes <b>sejam perdidas todos os dias</b>.</p>
             </section>
         </div>
-    </div>
-    <div class="container">
-        <section class="solucao">
-            <div class="solucao_info">
-                <h2 class="subtitulo">É aqui que <br>a ATO entra:</h2>
-                <p class="info">A ATO é uma agência especializada na criação de landing pages estratégicas para profissionais e negócios locais que desejam fortalecer sua presença digital e gerar mais contatos pela internet.</p>
-                <p class="info-menor destaque">Desenvolvemos páginas profissionais pensadas para apresentar seu negócio com clareza, transmitir confiança e facilitar o contato com seus clientes.</p>
-            </div>
-            <div class="solucao_caract">
-                <div class="solucao_caract-item canto-superior-direito">
-                    <img src="imgs/icon-business.png" alt="Icone de uma maleta">
-                    <p>Página profissional para apresentar seus serviços</p>
+        <div class="container">
+            <section class="solucao">
+                <div class="content-solucao-caract">
+                    <div class="solucao_caract-item">
+                        <img src="imgs/icon-business.png" alt="Icone de uma maleta">
+                        <p>Página profissional para apresentar seus serviços</p>
+                    </div>
+                    <div class="solucao_caract-item">
+                        <img src="imgs/icon-whats.png" alt="Icone do Whatsapp">
+                        <p>Integração direta com WhatsApp</p>
+                    </div>
+                    <div class="solucao_caract-item">
+                        <img src="imgs/icon-idea.png" alt="Icone de uma lampada">
+                        <p>Estrutura feita para gerar contatos</p>
+                    </div>
+                    <div class="solucao_caract-item">
+                        <img src="imgs/icon-cel.png" alt="Icone de um celular">
+                        <p>Otimização para dispositivos móveis</p>
+                    </div>
                 </div>
-                <div class="solucao_caract-item canto-superior-esquerdo">
-                    <img src="imgs/icon-whats.png" alt="Icone do Whatsapp">
-                    <p>Integração direta com WhatsApp</p>
+                <div class="solucao_info">
+                    <h2 class="subtitulo">É aqui que <br>a ATO entra:</h2>
+                    <p class="info">A ATO é uma agência especializada na criação de landing pages estratégicas para profissionais e negócios locais que desejam fortalecer sua presença digital e gerar mais contatos pela internet.</p>
+                    <hr class="barra">
+                    <p class="info-menor destaque">Desenvolvemos páginas profissionais pensadas para apresentar seu negócio com clareza, transmitir confiança e facilitar o contato com seus clientes.</p>
+                    <a href="#planos" class="btn-geral">Quero me destacar</a>
                 </div>
-                <div class="solucao_caract-item canto-inferior-direito">
-                    <img src="imgs/icon-idea.png" alt="Icone de uma lampada">
-                    <p>Estrutura pensada para gerar contatos</p>
-                </div>
-                <div class="solucao_caract-item canto-inferior-esquerdo">
-                    <img src="imgs/icon-cel.png" alt="Icone de um celular">
-                    <p>Experiência otimizada para dispositivos móveis</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
     <div class="container">
         <section class="como-funciona">
@@ -191,22 +194,26 @@
             <!-- <hr> -->
             <div class="container-como-funciona">
                 <article class="container-como-funciona_card">
-                    <span>Entendimento do seu negócio</span>
+                    <span class="info-plus">Entendimento do seu negócio</span>
+                    <span class="checkmark"></span>
                     <h3 class="sub-subtitulo">1. Conversa Inicial</h3>
                     <p class="info-menor">Conversamos para entender seu negócio, seus serviços e o objetivo da sua presença digital</p>
                 </article>
                 <article class="container-como-funciona_card card-destaque">
-                    <span>Estrutura estratégica</span>
+                    <span class="info-plus">Estrutura estratégica</span>
+                    <span class="checkmark"></span>
                     <h3 class="sub-subtitulo">2. Planejamento da página</h3>
                     <p class="info-menor">Definimos a estrutura da landing page para apresentar seu negócio de forma clara e gerar mais contatos</p>
                 </article>
                 <article class="container-como-funciona_card">
-                    <span>Criação da sua landing page</span>
+                    <span class="info-plus">Criação da sua landing page</span>
+                    <span class="checkmark"></span>
                     <h3 class="sub-subtitulo">3. Desenvolvimento</h3>
                     <p class="info-menor">Desenvolvemos sua página com design profissional, integração com WhatsApp e otimização para uma boa experiência em todos os dispositivos</p>
                 </article>
                 <article class="container-como-funciona_card card-destaque">
-                    <span>Seu site no ar</span>
+                    <span class="info-plus">Seu site no ar</span>
+                    <span class="checkmark"></span>
                     <h3 class="sub-subtitulo">4. Publicação</h3>
                     <p class="info-menor">Publicamos sua página na internet e deixamos tudo pronto para que seus clientes possam encontrar você online</p>
                 </article>
@@ -219,22 +226,22 @@
                 <h2 class="subtitulo">Para quem nossas soluções são ideais?</h2>
                 <div class="container-cards">
                     <article class="container-cards_card">
-                        <img src="imgs/profissionais-liberais.webp" alt="Profissionais Liberais">
+                        <img src="imgs/profissionais-liberais.webp" alt="Ícone de três pessoas">
                         <h3 class="sub-subtitulo">Profissionais Liberais</h3>
                         <p class="info-menor">Advogados, consultores, psicólogos e outros que desejam apresentar seus serviços com mais profissionalismo na internet</p>
                     </article>
                     <article class="container-cards_card">
-                        <img src="imgs/negocios-locais.webp" alt="Negócios Locais">
+                        <img src="imgs/negocios-locais.webp" alt="Ícone de um prédio">
                         <h3 class="sub-subtitulo">Negócios Locais</h3>
                         <p class="info-menor">Empresas que atendem na sua cidade e precisam aparecer melhor no Google e receber mais contatos pelo WhatsApp</p>
                     </article>
                     <article class="container-cards_card">
-                        <img src="imgs/empreendedores-iniciais.webp" alt="Empreendedores Iniciantes">
+                        <img src="imgs/empreendedores-iniciais.webp" alt="Ícone de um gráfico crescente">
                         <h3 class="sub-subtitulo">Empreendedores iniciando presença digital</h3>
                         <p class="info-menor">Negócios que ainda dependem apenas de redes sociais e querem dar o próximo passo com um site profissional</p>
                     </article>
                     <article class="container-cards_card">
-                        <img src="imgs/empresas-gerar-contatos.webp" alt="Empresas que querem mais contatos">
+                        <img src="imgs/empresas-gerar-contatos.webp" alt="Ícone de uma mão e de algumas pessoas">
                         <h3 class="sub-subtitulo">Empresas que querem gerar mais contatos</h3>
                         <p class="info-menor">Negócios que já estão online, mas querem uma página mais estratégica para converter visitantes em clientes</p>
                     </article>
