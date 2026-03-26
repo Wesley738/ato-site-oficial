@@ -175,7 +175,7 @@ header:hover {
     content: "";
     z-index: 1;
     position: absolute;
-    inset: 0;
+    top: 0; right: 10px; bottom: 0; left: 0;
     background-color: transparent;
     background-image: linear-gradient(180deg, transparent, transparent, transparent, transparent, transparent,#000000);
 }
@@ -193,7 +193,13 @@ header:hover {
     font-size: 2.1rem;
     font-weight: 400;
     margin: 0 0 0 3rem;
+    transition: all .4s ease-in-out;
 }
+
+.titulo-principal:hover {
+    filter: brightness(1.2);
+}
+
 
 .titulo-principal_destaque {
     display: block;
@@ -201,7 +207,20 @@ header:hover {
     text-transform: uppercase;
     font-size: 4.3rem;
     letter-spacing: -1px;
-    transform: translateX(-50px);
+    transform: translateX(-50px) filter 0.3s;
+    animation: pulsar 7s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1) translateX(-50px);
+    }
+    50% {
+        transform: scale(1.05) translateX(-50px);
+    }
+    100% {
+        transform: scale(1) translateX(-50px);
+    }
 }
 
 .titulo-principal_destaque.segundo {
@@ -212,8 +231,6 @@ header:hover {
     background: linear-gradient(
         135deg,
         #000000,
-        #ffffff,
-        #ffffff,
         #ffffff,
         #ffffff,
         #000000
@@ -231,7 +248,6 @@ header:hover {
     background: linear-gradient(
         135deg,
         #000000,
-        #ffffff,
         #ffffff,
         #ffffff,
         #ffffff,
@@ -439,11 +455,11 @@ header:hover {
 
 .apresentacao-solucao_main .subtitulo.front .texto-gradiente {
     background: linear-gradient(
-        135deg,
+        0deg,
+        #000000,
         #ffffff,
         #ffffff,
-        #ffffff,
-        #000000
+        #ffffff
     );
     background-size: 100%;
 
@@ -454,6 +470,7 @@ header:hover {
     margin: 0;
     transform: translateX(-130px);
     font-weight: bold;
+    opacity: .7;
 }
 
 .apresentacao-solucao_main .subtitulo.back {
