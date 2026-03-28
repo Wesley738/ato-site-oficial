@@ -171,6 +171,58 @@ header:hover {
     max-width: 510px;
 }
 
+.foto-main .icon-float {
+    position: absolute;
+}
+
+.foto-main .icon-float.img-google-ads {
+    max-width: 100px;
+    top: 60px; left: 20px;
+    animation: levitar 3s ease-in-out infinite;
+}
+
+.foto-main .icon-float.img-cadeado {
+    max-width: 40px;
+    top: 200px; left: 20px;
+    animation: levitar 3s ease-in-out infinite;
+}
+
+.foto-main .icon-float.img-lupa {
+    max-width: 80px;
+    top: 60px; right: 20px;
+    animation: levitar-second 3s ease-in-out infinite;
+}
+
+.foto-main .icon-float.img-google-analytics {
+    max-width: 50px;
+    top: 190px; right: 20px;
+    animation: levitar-second 3s ease-in-out infinite;
+}
+
+@keyframes levitar-second {
+    0% {
+        transform: rotate(20deg) translateY(0);
+    }
+    50% {
+        transform: rotate(20deg) translateY(-10px);
+    }
+    100% {
+        transform: rotate(20deg) translateY(0);
+    }
+}
+
+@keyframes levitar {
+    0% {
+        transform: rotate(-20deg) translateY(0);
+    }
+    50% {
+        transform: rotate(-20deg) translateY(-10px);
+    }
+    100% {
+        transform: rotate(-20deg) translateY(0);
+    }
+}
+
 .foto-main::after {
     content: "";
     z-index: 1;
