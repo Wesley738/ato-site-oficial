@@ -478,6 +478,15 @@ header:hover {
     margin: 1rem auto;
 }
 
+.apresentacao-solucao_main::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0; right: 10px; bottom: 0; left: 0;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent, transparent, transparent, transparent, transparent,#000000);
+}
+
 .apresentacao-solucao_main {
     flex-grow: 1;
 }
@@ -507,7 +516,7 @@ header:hover {
 
 .apresentacao-solucao_main .subtitulo.front .texto-gradiente {
     background: linear-gradient(
-        0deg,
+        307deg,
         #000000,
         #ffffff,
         #ffffff,
@@ -517,12 +526,11 @@ header:hover {
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 7rem;
+    font-size: 5rem;
     display: block;
     margin: 0;
-    transform: translateX(-130px);
+    transform: translate(30px, -10px);
     font-weight: bold;
-    opacity: .7;
 }
 
 .apresentacao-solucao_main .subtitulo.back {
@@ -534,7 +542,7 @@ header:hover {
 
 .apresentacao-solucao_main .subtitulo.front {
     position: absolute;
-    top: 100px; right: 30px;
+    top: 100px; right: 110px;
     text-transform: none;
     font-weight: 400;
 }
@@ -552,7 +560,6 @@ header:hover {
     display: flex;
     gap: .5rem;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -574,4 +581,40 @@ header:hover {
 .card-solucao:hover {
     transform: translateY(-3px); 
     opacity: 1;  
+}
+
+.sobre {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.sobre .sobre-imgs img {
+    max-width: 200px;
+    display: block;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.sobre .sobre-imgs img:nth-child(2) {
+    max-width: 250px;
+}
+
+.sobre-imgs {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sobre-text {
+    z-index: 1;
+}
+
+.sobre-text .subtitulo {
+    margin: 0 0 .5rem;
+    text-align: center;
+    min-width: 100%;
+    transform: translateY(-30px);
+    font-size: 3.9rem;
 }
