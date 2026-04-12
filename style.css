@@ -909,6 +909,8 @@ header:hover {
     max-width: 90%;
     justify-content: center;
     gap: 2rem;
+    align-items: start;
+    position: relative;
 }
 
 .content-plano {
@@ -917,6 +919,8 @@ header:hover {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    min-height: auto;
+    z-index: 1;
 }
 
 .content-plano * {
@@ -926,6 +930,7 @@ header:hover {
 .content-plano.card-black {
     background: linear-gradient(135deg, #3a3a3abe, #000000be, #000000be, #3a3a3abe);
     padding: 0;
+    min-height: auto;
 }
 
 .content-plano img {
@@ -953,13 +958,99 @@ header:hover {
 
 .card-ligth {
     background-color: #1b1b1b;
-    background-image: radial-gradient(circle at 6% 3%, rgba(255,255,255,0.16), transparent 28%);
+    background-image: radial-gradient(circle at 6% 3%, rgba(255,255,255,0.31), transparent 39%);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.content-plano .btn-geral {
+    /* margin-block-start: auto; */
+    text-align: center;
+}
+
 .info-superior {
     border: 1px solid rgba(255, 255, 255, .4);
+    padding-bottom: 1rem;
+}
+
+.info-superior .sub-subtitulo {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.line {
+    width: 25%;
+}
+
+.info-superior .info-plus {
+    font-style: italic;
+    max-width: 75%;
+    text-align: center;
+    font-size: .8rem;
+    margin: .3rem auto;
+}
+
+.info-price {
+    font-size: .9rem;
+    font-weight: 600;
+    margin: .5rem auto 0;
+}
+
+.content-price {
+    display: flex;
+    align-items: end;
+}
+
+.content-price .price {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+.content-price .price-plus {
+    font-size: 1rem;
+    transform: translate(1px, -4px);
+}
+
+.list-benef {
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+.list-benef li {
+    font-size: .9rem;
+    margin: .6rem 0;
+}
+
+/*TEMPORÁRIO*/
+
+.info-inativo {
+    font-size: 1.7rem;
+    max-width: 60%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.inativo {
+    opacity: .5;
+    transition: none;
+}
+
+.inativo:hover {
+    transform: none;
+}
+
+.inativo .btn-geral {
+    display: none;
+}
+
+.inativo.left {
+    transform: translate(50px, 50px);
+    z-index: 0;
+}
+
+.inativo.right {
+    transform: translate(-50px, 50px);
+    z-index: 0;
 }
