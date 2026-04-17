@@ -17,7 +17,9 @@ body {
         radial-gradient(circle at 81% 23%, rgba(255,255,255,0.16), transparent 14%);
 }
 
-/*  */
+.whats {
+    outline: 2px solid yellow;
+}
 
 body * {
     z-index: 1;
@@ -28,14 +30,14 @@ body * {
     margin: 0 auto;
 }
 
+.background {
+    background-color: #101010;
+}
+
 .gancho {
     border-color: transparent;
     margin: 0 0 5.5rem;
 }
-
-/* .background-color {
-    background-color: #070707;
-} */
 
 nav {
     padding: 0 1.1rem 0;
@@ -444,7 +446,7 @@ header:hover {
 }
 
 .card-black .info-menor {
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: 5px;
 }
 
@@ -474,8 +476,6 @@ header:hover {
 .apresentacao-solucao {
     display: flex;
     gap: 1rem;
-    /* max-width: 90%;
-    margin: 0 auto; */
 }
 
 .solucao {
@@ -908,7 +908,7 @@ header:hover {
 }
 
 .container-planos {
-    margin: 3rem auto;
+    margin: 3rem auto 2rem;
     display: flex;
     flex-wrap: wrap;
     max-width: 90%;
@@ -1028,8 +1028,113 @@ header:hover {
     margin: .6rem 0;
 }
 
-/*TEMPORÁRIO*/
+.planos .info-destaque {
+    font-size: 1.3rem;
+    max-width: 55%;
+    margin: 1rem auto;
+    text-align: center;
+}
 
+.planos .info-destaque-promocao {
+    font-size: 1.2rem;
+    max-width: 40%;
+    margin: 0 auto 1rem;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    border: 1px solid var(--border-glass);
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #101010;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 3rem;
+}
+
+.content-info_nav {
+    min-width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.footer-empresa {
+    display: flex;
+    flex-basis: 450px;
+    gap: .5rem;
+}
+
+.footer-empresa img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-empresa .info {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-empresa .info span {
+    font-weight: bold;
+    display: block;
+}
+
+.footer-contato .item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .6rem;
+}
+
+.footer-btn {
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+    color: var(--color-secundary);
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    text-decoration: underline;
+}
+
+.footer-subtitulo {
+    font-size: 1rem;
+    margin: 0 0 .9rem;
+    transform: translateX(-20px);
+}
+
+.footer-contato .item .info {
+    font-size: .9rem;
+    margin: 0;
+}
+
+.footer-contato .item img {
+    width: 20px;
+}
+
+.footer-menu {
+    padding-left: .5rem;
+}
+
+.footer-menu li {
+    margin-bottom: .6rem;
+    font-size: .9rem;
+}
+
+.footer-direitos {
+    font-size: .9rem;
+    margin-top: 5rem;
+}
+
+/* == RESPONSIVIDADE == */
+
+/*TEMPORÁRIO*/
 .info-inativo {
     font-size: 1.7rem;
     max-width: 60%;
