@@ -177,4 +177,46 @@
     .content-info_nav {
         flex-direction: column;
     }
+
+    .apresentacao-problema {
+        padding: 1em;
+    }
+
+    .acrescimo-subtitulo {
+        align-items: start;
+    }
+
+    .acrescimo-subtitulo .acrescimo-subtitulo_info {
+        font-size: 1em;
+        max-width: 70%;
+    }
+
+    .apresentacao-problema .info-problema_destaque {
+        position: initial;
+        max-width: 100%;
+        text-align: center;
+        margin: 2em 0;
+        padding: .1em;
+    }
+
+    .apresentacao-problema .subtitulo {
+        max-width: 100%;
+        font-size: 2.6em;
+    }
+
+    .content-problemas {
+        padding: 0 .8em;
+        gap: 1.2em;
+    }
+
+    .content-problemas .card-black {
+        flex-grow: 1;
+        min-height: 130px;
+        padding: .8em;
+    }
+
+    .content-problemas .card-black .info-menor {
+        margin: .5em 0 0;
+    }
+
 }
